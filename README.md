@@ -1,4 +1,5 @@
 # AR-Bomb-Squad
+## Team: Neil Shah, Akshat Goel, Julie Bao
 
 **AR Bomb Squad** is an iOS game implemented using Augmented Reality that will feature upto 10+ stages where the user will have to find and disarm bombs spread across the surroundings. 
 Disarming all the bombs successfully within the given time limit would take the user onto the next stage. 
