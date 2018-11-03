@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpViewController" customModule="The_Balloon_Game" customModuleProvider="target">
+            <connections>
+                <outlet property="nextButton" destination="Bp2-Pw-fFG" id="mZL-ES-ccf"/>
+                <outlet property="popUpView" destination="zz9-By-Is1" id="SnX-71-ZVi"/>
+                <outlet property="statusLabel" destination="XkW-QU-gVr" id="RO8-16-6JC"/>
+                <outlet property="view" destination="iN0-l3-epB" id="WrW-nh-j87"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zz9-By-Is1">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stage 1 Cleared" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkW-QU-gVr">
+                            <rect key="frame" x="109.5" y="70" width="156.5" height="27.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLB-Ya-oj3">
+                            <rect key="frame" x="299" y="577" width="46" height="30"/>
+                            <state key="normal" title="Replay"/>
+                            <connections>
+                                <action selector="clickedReplay:" destination="-1" eventType="touchUpInside" id="qQg-b0-VAH"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnY-AP-DEK">
+                            <rect key="frame" x="30" y="577" width="41" height="30"/>
+                            <state key="normal" title="Home"/>
+                            <connections>
+                                <action selector="pressedHome:" destination="-1" eventType="touchUpInside" id="3rU-rF-QER"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bp2-Pw-fFG">
+                            <rect key="frame" x="171.5" y="517" width="32" height="30"/>
+                            <state key="normal" title="Next"/>
+                            <connections>
+                                <action selector="clickedNext:" destination="-1" eventType="touchUpInside" id="Rqz-Sb-LsO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="fhZ-YK-eAw" firstAttribute="trailing" secondItem="dLB-Ya-oj3" secondAttribute="trailing" constant="30" id="67K-9D-TQx"/>
+                        <constraint firstItem="XkW-QU-gVr" firstAttribute="top" secondItem="fhZ-YK-eAw" secondAttribute="top" constant="50" id="6vX-qI-Ugg"/>
+                        <constraint firstItem="dLB-Ya-oj3" firstAttribute="centerY" secondItem="WnY-AP-DEK" secondAttribute="centerY" id="BRd-xk-1s9"/>
+                        <constraint firstItem="Bp2-Pw-fFG" firstAttribute="centerX" secondItem="zz9-By-Is1" secondAttribute="centerX" id="Gm5-3B-pRQ"/>
+                        <constraint firstItem="WnY-AP-DEK" firstAttribute="top" secondItem="Bp2-Pw-fFG" secondAttribute="bottom" constant="30" id="Ogt-ru-Z39"/>
+                        <constraint firstItem="WnY-AP-DEK" firstAttribute="leading" secondItem="zz9-By-Is1" secondAttribute="leading" constant="30" id="dEi-EK-J5s"/>
+                        <constraint firstItem="fhZ-YK-eAw" firstAttribute="bottom" secondItem="WnY-AP-DEK" secondAttribute="bottom" constant="60" id="ti1-OQ-Yfc"/>
+                        <constraint firstItem="XkW-QU-gVr" firstAttribute="centerX" secondItem="zz9-By-Is1" secondAttribute="centerX" id="xlH-Do-ngU"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="fhZ-YK-eAw"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zz9-By-Is1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="02P-8R-efj"/>
+                <constraint firstItem="zz9-By-Is1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TbO-Nb-wuQ"/>
+                <constraint firstAttribute="trailing" secondItem="zz9-By-Is1" secondAttribute="trailing" id="bfV-Eh-5WR"/>
+                <constraint firstAttribute="bottom" secondItem="zz9-By-Is1" secondAttribute="bottom" id="vlo-hL-KQL"/>
+            </constraints>
+            <point key="canvasLocation" x="348.5" y="364.5"/>
+        </view>
+    </objects>
+</document>

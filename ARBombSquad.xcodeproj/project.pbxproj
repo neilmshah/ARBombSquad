@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D0ADEB02000D3BB00EB074B /* LevelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ADEAF2000D3BB00EB074B /* LevelCollectionViewCell.swift */; };
+		1DA48DB2205EA59F004BA02C /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA48DB0205EA59B004BA02C /* KLCPopup.m */; };
+		1DAD0D51202F406C00A35F67 /* StageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAD0D50202F406C00A35F67 /* StageTwo.swift */; };
+		1DAD0D55202F457100A35F67 /* StageConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAD0D54202F457100A35F67 /* StageConfiguration.swift */; };
+		1DBB0521205A278400A306D6 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBB051F205A278400A306D6 /* PopUpViewController.swift */; };
+		1DBB0522205A278400A306D6 /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBB0520205A278400A306D6 /* PopUpViewController.xib */; };
+		1DEF6E7E2047D8F000019831 /* StageInterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF6E7C2047D8F000019831 /* StageInterstitialViewController.swift */; };
+		9E8384DCF9B665BEA8C92AB1 /* Pods_ARBombSquad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C657F45ECBE24C43607298 /* Pods_ARBombSquad.framework */; };
+		AC39217D2046BAE400B85A1F /* bullettxture.png in Resources */ = {isa = PBXBuildFile; fileRef = AC39217C2046BAE400B85A1F /* bullettxture.png */; };
+		AC723546203C4C6E000FE6EE /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC723545203C4C6E000FE6EE /* UIAlertController+Extension.swift */; };
+		AC7A54C4202FFAC700A4E670 /* StageThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7A54C3202FFAC700A4E670 /* StageThree.swift */; };
+		AC7A54C620317C1100A4E670 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7A54C520317C1100A4E670 /* DataStore.swift */; };
+		AC7A54C82031813900A4E670 /* StageFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7A54C72031813900A4E670 /* StageFour.swift */; };
+		AC7A54CA203181A600A4E670 /* StageFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7A54C9203181A600A4E670 /* StageFive.swift */; };
+		AC7A54CC2031821100A4E670 /* StageSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7A54CB2031821100A4E670 /* StageSix.swift */; };
+		AC7A54CE2031824600A4E670 /* StageSeven.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7A54CD2031824600A4E670 /* StageSeven.swift */; };
+		AC7A54D02031825E00A4E670 /* StageEight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7A54CF2031825E00A4E670 /* StageEight.swift */; };
+		AC7A54D22031827500A4E670 /* StageNine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7A54D12031827500A4E670 /* StageNine.swift */; };
+		AC7A54D42031828A00A4E670 /* StageTen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7A54D32031828A00A4E670 /* StageTen.swift */; };
+		AC8682341FE10B2200F0E067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8682331FE10B2200F0E067 /* AppDelegate.swift */; };
+		AC8682361FE10B2200F0E067 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8682351FE10B2200F0E067 /* GamePlayViewController.swift */; };
+		AC8682391FE10B2200F0E067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8682371FE10B2200F0E067 /* Main.storyboard */; };
+		AC86823C1FE10B2200F0E067 /* The_Balloon_Game.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC86823A1FE10B2200F0E067 /* The_Balloon_Game.xcdatamodeld */; };
+		AC86823E1FE10B2200F0E067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC86823D1FE10B2200F0E067 /* Assets.xcassets */; };
+		AC8682411FE10B2200F0E067 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC86823F1FE10B2200F0E067 /* LaunchScreen.storyboard */; };
+		AC86824C1FE10D7700F0E067 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86824B1FE10D7700F0E067 /* HomeScreenViewController.swift */; };
+		AC86824E1FE10DAD00F0E067 /* GameLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86824D1FE10DAD00F0E067 /* GameLevelViewController.swift */; };
+		AC8682501FE10E0E00F0E067 /* Media.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = AC86824F1FE10E0E00F0E067 /* Media.scnassets */; };
+		ACBB778D20457B53002970E8 /* gunshot.wav in Resources */ = {isa = PBXBuildFile; fileRef = ACBB778C20457B53002970E8 /* gunshot.wav */; };
+		ACBB778F204629C2002970E8 /* balloonburst.wav in Resources */ = {isa = PBXBuildFile; fileRef = ACBB778E204629C2002970E8 /* balloonburst.wav */; };
+		ACBB779220462F15002970E8 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB779120462F15002970E8 /* Audio.swift */; };
+		ACBB7794204631CF002970E8 /* AVAudioPlayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB7793204631CF002970E8 /* AVAudioPlayer+Extension.swift */; };
+		ACDF81C92000FBD700A26E74 /* StageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDF81C82000FBD700A26E74 /* StageOne.swift */; };
+		ACDF81CB200107E200A26E74 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDF81CA200107E200A26E74 /* UserDefaultsManager.swift */; };
+		ACE8559020296A140052131A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE8558F20296A140052131A /* String+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D0ADEAF2000D3BB00EB074B /* LevelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelCollectionViewCell.swift; sourceTree = "<group>"; };
+		1DA48DA3205E8D2C004BA02C /* ARBombSquad-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARBombSquad-Bridging-Header.h"; sourceTree = "<group>"; };
+		1DA48DB0205EA59B004BA02C /* KLCPopup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLCPopup.m; sourceTree = "<group>"; };
+		1DA48DB1205EA59B004BA02C /* KLCPopup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLCPopup.h; sourceTree = "<group>"; };
+		1DAD0D50202F406C00A35F67 /* StageTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageTwo.swift; sourceTree = "<group>"; };
+		1DAD0D54202F457100A35F67 /* StageConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageConfiguration.swift; sourceTree = "<group>"; };
+		1DBB051F205A278400A306D6 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		1DBB0520205A278400A306D6 /* PopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
+		1DEF6E7C2047D8F000019831 /* StageInterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageInterstitialViewController.swift; sourceTree = "<group>"; };
+		2FC12B2179E59A4E3B84F36A /* Pods-ARBombSquad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBombSquad.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARBombSquad/Pods-ARBombSquad.release.xcconfig"; sourceTree = "<group>"; };
+		6F75B83C8EB5CFCB4FC57281 /* Pods_The_Balloon_Game.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Balloon_Game.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8677B0743D677FDEC08271EA /* Pods-ARBombSquad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBombSquad.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARBombSquad/Pods-ARBombSquad.release.xcconfig"; sourceTree = "<group>"; };
+		A4C657F45ECBE24C43607298 /* Pods_ARBombSquad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARBombSquad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC39217C2046BAE400B85A1F /* bullettxture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullettxture.png; sourceTree = "<group>"; };
+		AC723545203C4C6E000FE6EE /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
+		AC7A54C3202FFAC700A4E670 /* StageThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageThree.swift; sourceTree = "<group>"; };
+		AC7A54C520317C1100A4E670 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		AC7A54C72031813900A4E670 /* StageFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageFour.swift; sourceTree = "<group>"; };
+		AC7A54C9203181A600A4E670 /* StageFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageFive.swift; sourceTree = "<group>"; };
+		AC7A54CB2031821100A4E670 /* StageSix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageSix.swift; sourceTree = "<group>"; };
+		AC7A54CD2031824600A4E670 /* StageSeven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageSeven.swift; sourceTree = "<group>"; };
+		AC7A54CF2031825E00A4E670 /* StageEight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageEight.swift; sourceTree = "<group>"; };
+		AC7A54D12031827500A4E670 /* StageNine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageNine.swift; sourceTree = "<group>"; };
+		AC7A54D32031828A00A4E670 /* StageTen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageTen.swift; sourceTree = "<group>"; };
+		AC8682301FE10B2200F0E067 /* ARBombSquad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARBombSquad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC8682331FE10B2200F0E067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC8682351FE10B2200F0E067 /* GamePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
+		AC8682381FE10B2200F0E067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC86823B1FE10B2200F0E067 /* The_Balloon_Game.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = The_Balloon_Game.xcdatamodel; sourceTree = "<group>"; };
+		AC86823D1FE10B2200F0E067 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC8682401FE10B2200F0E067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC8682421FE10B2200F0E067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC86824B1FE10D7700F0E067 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		AC86824D1FE10DAD00F0E067 /* GameLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLevelViewController.swift; sourceTree = "<group>"; };
+		AC86824F1FE10E0E00F0E067 /* Media.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Media.scnassets; sourceTree = "<group>"; };
+		ACBB778C20457B53002970E8 /* gunshot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gunshot.wav; sourceTree = "<group>"; };
+		ACBB778E204629C2002970E8 /* balloonburst.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = balloonburst.wav; sourceTree = "<group>"; };
+		ACBB779120462F15002970E8 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		ACBB7793204631CF002970E8 /* AVAudioPlayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAudioPlayer+Extension.swift"; sourceTree = "<group>"; };
+		ACDF81C82000FBD700A26E74 /* StageOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageOne.swift; sourceTree = "<group>"; };
+		ACDF81CA200107E200A26E74 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		ACE8558F20296A140052131A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		EEA7E9C0369AD5CA42D8E76E /* Pods-ARBombSquad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBombSquad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARBombSquad/Pods-ARBombSquad.debug.xcconfig"; sourceTree = "<group>"; };
+		FBD29ACD62D7EC7BC3CECF28 /* Pods-ARBombSquad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBombSquad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARBombSquad/Pods-ARBombSquad.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC86822D1FE10B2200F0E067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E8384DCF9B665BEA8C92AB1 /* Pods_ARBombSquad.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37D54A1EEC94DE317D9DC8B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBD29ACD62D7EC7BC3CECF28 /* Pods-ARBombSquad.debug.xcconfig */,
+				2FC12B2179E59A4E3B84F36A /* Pods-ARBombSquad.release.xcconfig */,
+				EEA7E9C0369AD5CA42D8E76E /* Pods-ARBombSquad.debug.xcconfig */,
+				8677B0743D677FDEC08271EA /* Pods-ARBombSquad.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		73DA0E1A200D704F6E2A112D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F75B83C8EB5CFCB4FC57281 /* Pods_The_Balloon_Game.framework */,
+				A4C657F45ECBE24C43607298 /* Pods_ARBombSquad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC2E15AC20345956008F2D89 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		AC3921792046BAA400B85A1F /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				AC39217C2046BAE400B85A1F /* bullettxture.png */,
+			);
+			path = Textures;
+			sourceTree = "<group>";
+		};
+		AC8682271FE10B2200F0E067 = {
+			isa = PBXGroup;
+			children = (
+				AC8682321FE10B2200F0E067 /* ARBombSquad */,
+				AC8682311FE10B2200F0E067 /* Products */,
+				37D54A1EEC94DE317D9DC8B9 /* Pods */,
+				73DA0E1A200D704F6E2A112D /* Frameworks */,
+				AC2E15AC20345956008F2D89 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		AC8682311FE10B2200F0E067 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC8682301FE10B2200F0E067 /* ARBombSquad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC8682321FE10B2200F0E067 /* ARBombSquad */ = {
+			isa = PBXGroup;
+			children = (
+				1DA48DB1205EA59B004BA02C /* KLCPopup.h */,
+				1DA48DB0205EA59B004BA02C /* KLCPopup.m */,
+				1DBB051F205A278400A306D6 /* PopUpViewController.swift */,
+				1DBB0520205A278400A306D6 /* PopUpViewController.xib */,
+				AC3921792046BAA400B85A1F /* Textures */,
+				ACBB779020462E74002970E8 /* stages */,
+				ACBB778B204573CF002970E8 /* sounds */,
+				ACE8558E202969F40052131A /* extension */,
+				AC86824A1FE10B4C00F0E067 /* Controller */,
+				AC8682491FE10B4400F0E067 /* Model */,
+				AC8682481FE10B3900F0E067 /* View */,
+				AC86823D1FE10B2200F0E067 /* Assets.xcassets */,
+				1DA48DA3205E8D2C004BA02C /* ARBombSquad-Bridging-Header.h */,
+				AC86823F1FE10B2200F0E067 /* LaunchScreen.storyboard */,
+				AC8682421FE10B2200F0E067 /* Info.plist */,
+				AC86823A1FE10B2200F0E067 /* The_Balloon_Game.xcdatamodeld */,
+				AC86824F1FE10E0E00F0E067 /* Media.scnassets */,
+			);
+			path = ARBombSquad;
+			sourceTree = "<group>";
+		};
+		AC8682481FE10B3900F0E067 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC8682371FE10B2200F0E067 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC8682491FE10B4400F0E067 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1DAD0D54202F457100A35F67 /* StageConfiguration.swift */,
+				ACDF81CA200107E200A26E74 /* UserDefaultsManager.swift */,
+				AC7A54C520317C1100A4E670 /* DataStore.swift */,
+				ACBB779120462F15002970E8 /* Audio.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC86824A1FE10B4C00F0E067 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC8682331FE10B2200F0E067 /* AppDelegate.swift */,
+				AC86824B1FE10D7700F0E067 /* HomeScreenViewController.swift */,
+				AC86824D1FE10DAD00F0E067 /* GameLevelViewController.swift */,
+				1D0ADEAF2000D3BB00EB074B /* LevelCollectionViewCell.swift */,
+				AC8682351FE10B2200F0E067 /* GamePlayViewController.swift */,
+				1DEF6E7C2047D8F000019831 /* StageInterstitialViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ACBB778B204573CF002970E8 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				ACBB778E204629C2002970E8 /* balloonburst.wav */,
+				ACBB778C20457B53002970E8 /* gunshot.wav */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		ACBB779020462E74002970E8 /* stages */ = {
+			isa = PBXGroup;
+			children = (
+				ACDF81C82000FBD700A26E74 /* StageOne.swift */,
+				1DAD0D50202F406C00A35F67 /* StageTwo.swift */,
+				AC7A54C3202FFAC700A4E670 /* StageThree.swift */,
+				AC7A54C72031813900A4E670 /* StageFour.swift */,
+				AC7A54C9203181A600A4E670 /* StageFive.swift */,
+				AC7A54CB2031821100A4E670 /* StageSix.swift */,
+				AC7A54CD2031824600A4E670 /* StageSeven.swift */,
+				AC7A54CF2031825E00A4E670 /* StageEight.swift */,
+				AC7A54D12031827500A4E670 /* StageNine.swift */,
+				AC7A54D32031828A00A4E670 /* StageTen.swift */,
+			);
+			path = stages;
+			sourceTree = "<group>";
+		};
+		ACE8558E202969F40052131A /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				ACE8558F20296A140052131A /* String+Extension.swift */,
+				AC723545203C4C6E000FE6EE /* UIAlertController+Extension.swift */,
+				ACBB7793204631CF002970E8 /* AVAudioPlayer+Extension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC86822F1FE10B2200F0E067 /* ARBombSquad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC8682451FE10B2200F0E067 /* Build configuration list for PBXNativeTarget "ARBombSquad" */;
+			buildPhases = (
+				8C8F499C25F151430886AAE5 /* [CP] Check Pods Manifest.lock */,
+				AC86822C1FE10B2200F0E067 /* Sources */,
+				AC86822D1FE10B2200F0E067 /* Frameworks */,
+				AC86822E1FE10B2200F0E067 /* Resources */,
+				C270201A0148C767F33AA6A9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARBombSquad;
+			productName = "The Balloon Game";
+			productReference = AC8682301FE10B2200F0E067 /* ARBombSquad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC8682281FE10B2200F0E067 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = starksky;
+				TargetAttributes = {
+					AC86822F1FE10B2200F0E067 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AC86822B1FE10B2200F0E067 /* Build configuration list for PBXProject "ARBombSquad" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC8682271FE10B2200F0E067;
+			productRefGroup = AC8682311FE10B2200F0E067 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC86822F1FE10B2200F0E067 /* ARBombSquad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC86822E1FE10B2200F0E067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8682411FE10B2200F0E067 /* LaunchScreen.storyboard in Resources */,
+				AC86823E1FE10B2200F0E067 /* Assets.xcassets in Resources */,
+				AC39217D2046BAE400B85A1F /* bullettxture.png in Resources */,
+				1DBB0522205A278400A306D6 /* PopUpViewController.xib in Resources */,
+				AC8682501FE10E0E00F0E067 /* Media.scnassets in Resources */,
+				ACBB778F204629C2002970E8 /* balloonburst.wav in Resources */,
+				AC8682391FE10B2200F0E067 /* Main.storyboard in Resources */,
+				ACBB778D20457B53002970E8 /* gunshot.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C8F499C25F151430886AAE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARBombSquad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C270201A0148C767F33AA6A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ARBombSquad/Pods-ARBombSquad-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MZTimerLabel/MZTimerLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/STZPopupView/STZPopupView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MZTimerLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/STZPopupView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARBombSquad/Pods-ARBombSquad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC86822C1FE10B2200F0E067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC7A54C620317C1100A4E670 /* DataStore.swift in Sources */,
+				AC7A54CC2031821100A4E670 /* StageSix.swift in Sources */,
+				ACBB779220462F15002970E8 /* Audio.swift in Sources */,
+				AC86823C1FE10B2200F0E067 /* The_Balloon_Game.xcdatamodeld in Sources */,
+				ACE8559020296A140052131A /* String+Extension.swift in Sources */,
+				AC7A54D02031825E00A4E670 /* StageEight.swift in Sources */,
+				AC7A54CE2031824600A4E670 /* StageSeven.swift in Sources */,
+				1DBB0521205A278400A306D6 /* PopUpViewController.swift in Sources */,
+				AC86824C1FE10D7700F0E067 /* HomeScreenViewController.swift in Sources */,
+				1DAD0D51202F406C00A35F67 /* StageTwo.swift in Sources */,
+				AC8682361FE10B2200F0E067 /* GamePlayViewController.swift in Sources */,
+				1DA48DB2205EA59F004BA02C /* KLCPopup.m in Sources */,
+				AC7A54D22031827500A4E670 /* StageNine.swift in Sources */,
+				AC7A54C82031813900A4E670 /* StageFour.swift in Sources */,
+				1D0ADEB02000D3BB00EB074B /* LevelCollectionViewCell.swift in Sources */,
+				AC8682341FE10B2200F0E067 /* AppDelegate.swift in Sources */,
+				AC86824E1FE10DAD00F0E067 /* GameLevelViewController.swift in Sources */,
+				1DEF6E7E2047D8F000019831 /* StageInterstitialViewController.swift in Sources */,
+				ACDF81CB200107E200A26E74 /* UserDefaultsManager.swift in Sources */,
+				ACBB7794204631CF002970E8 /* AVAudioPlayer+Extension.swift in Sources */,
+				AC723546203C4C6E000FE6EE /* UIAlertController+Extension.swift in Sources */,
+				ACDF81C92000FBD700A26E74 /* StageOne.swift in Sources */,
+				AC7A54D42031828A00A4E670 /* StageTen.swift in Sources */,
+				1DAD0D55202F457100A35F67 /* StageConfiguration.swift in Sources */,
+				AC7A54C4202FFAC700A4E670 /* StageThree.swift in Sources */,
+				AC7A54CA203181A600A4E670 /* StageFive.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC8682371FE10B2200F0E067 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC8682381FE10B2200F0E067 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC86823F1FE10B2200F0E067 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC8682401FE10B2200F0E067 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC8682431FE10B2200F0E067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC8682441FE10B2200F0E067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC8682461FE10B2200F0E067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEA7E9C0369AD5CA42D8E76E /* Pods-ARBombSquad.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N393D64FC;
+				INFOPLIST_FILE = ARBombSquad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.starksky.ARBombSquad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_ENABLE_BATCH_MODE = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC8682471FE10B2200F0E067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8677B0743D677FDEC08271EA /* Pods-ARBombSquad.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6N393D64FC;
+				INFOPLIST_FILE = ARBombSquad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.starksky.ARBombSquad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_ENABLE_BATCH_MODE = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC86822B1FE10B2200F0E067 /* Build configuration list for PBXProject "ARBombSquad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC8682431FE10B2200F0E067 /* Debug */,
+				AC8682441FE10B2200F0E067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC8682451FE10B2200F0E067 /* Build configuration list for PBXNativeTarget "ARBombSquad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC8682461FE10B2200F0E067 /* Debug */,
+				AC8682471FE10B2200F0E067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC86823A1FE10B2200F0E067 /* The_Balloon_Game.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC86823B1FE10B2200F0E067 /* The_Balloon_Game.xcdatamodel */,
+			);
+			currentVersion = AC86823B1FE10B2200F0E067 /* The_Balloon_Game.xcdatamodel */;
+			path = The_Balloon_Game.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AC8682281FE10B2200F0E067 /* Project object */;
+}

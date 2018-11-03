@@ -1,0 +1,6 @@
+framework module Pods_ARBombSquad {
+  umbrella header "Pods-ARBombSquad-umbrella.h"
+
+  export *
+  module * { export * }
+}
