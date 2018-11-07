@@ -12,7 +12,7 @@ class HomeScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("in homescreen view")
         // Do any additional setup after loading the view.
     }
 

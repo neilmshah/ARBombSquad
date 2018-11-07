@@ -14,6 +14,7 @@
 		1DBB0521205A278400A306D6 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBB051F205A278400A306D6 /* PopUpViewController.swift */; };
 		1DBB0522205A278400A306D6 /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBB0520205A278400A306D6 /* PopUpViewController.xib */; };
 		1DEF6E7E2047D8F000019831 /* StageInterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF6E7C2047D8F000019831 /* StageInterstitialViewController.swift */; };
+		282F2DFC2192C728003D7485 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282F2DFB2192C728003D7485 /* LoginViewController.swift */; };
 		9E8384DCF9B665BEA8C92AB1 /* Pods_ARBombSquad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C657F45ECBE24C43607298 /* Pods_ARBombSquad.framework */; };
 		AC39217D2046BAE400B85A1F /* bullettxture.png in Resources */ = {isa = PBXBuildFile; fileRef = AC39217C2046BAE400B85A1F /* bullettxture.png */; };
 		AC723546203C4C6E000FE6EE /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC723545203C4C6E000FE6EE /* UIAlertController+Extension.swift */; };
@@ -54,6 +55,7 @@
 		1DBB051F205A278400A306D6 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		1DBB0520205A278400A306D6 /* PopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
 		1DEF6E7C2047D8F000019831 /* StageInterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageInterstitialViewController.swift; sourceTree = "<group>"; };
+		282F2DFB2192C728003D7485 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2FC12B2179E59A4E3B84F36A /* Pods-ARBombSquad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBombSquad.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARBombSquad/Pods-ARBombSquad.release.xcconfig"; sourceTree = "<group>"; };
 		6F75B83C8EB5CFCB4FC57281 /* Pods_The_Balloon_Game.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Balloon_Game.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8677B0743D677FDEC08271EA /* Pods-ARBombSquad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBombSquad.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARBombSquad/Pods-ARBombSquad.release.xcconfig"; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				1D0ADEAF2000D3BB00EB074B /* LevelCollectionViewCell.swift */,
 				AC8682351FE10B2200F0E067 /* GamePlayViewController.swift */,
 				1DEF6E7C2047D8F000019831 /* StageInterstitialViewController.swift */,
+				282F2DFB2192C728003D7485 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -350,12 +353,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ARBombSquad/Pods-ARBombSquad-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/MZTimerLabel/MZTimerLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 				"${BUILT_PRODUCTS_DIR}/STZPopupView/STZPopupView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MZTimerLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/STZPopupView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				282F2DFC2192C728003D7485 /* LoginViewController.swift in Sources */,
 				AC7A54C620317C1100A4E670 /* DataStore.swift in Sources */,
 				AC7A54CC2031821100A4E670 /* StageSix.swift in Sources */,
 				ACBB779220462F15002970E8 /* Audio.swift in Sources */,

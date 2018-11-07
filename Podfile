@@ -7,6 +7,7 @@ target 'ARBombSquad' do
 
     pod 'MZTimerLabel'
     pod 'STZPopupView'
+    pod 'Parse'
     
   # Pods for The Balloon Game
 
