@@ -1,20 +1,30 @@
 PODS:
+  - Bolts/Tasks (1.9.0)
   - MZTimerLabel (0.5.4)
+  - Parse (1.17.1):
+    - Parse/Core (= 1.17.1)
+  - Parse/Core (1.17.1):
+    - Bolts/Tasks (~> 1.9)
   - STZPopupView (1.2.0)
 
 DEPENDENCIES:
   - MZTimerLabel
+  - Parse
   - STZPopupView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Bolts
     - MZTimerLabel
+    - Parse
     - STZPopupView
 
 SPEC CHECKSUMS:
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   MZTimerLabel: cd9bfb9304540ef2a9e163384fca9c978f0dbf83
+  Parse: d3edaf8c7c722cb33cb83ba7821d015ae32d362d
   STZPopupView: 7e878b4d1baedd5df339067d305ab0120dc6da62
 
-PODFILE CHECKSUM: d67ec6004b01273f53081061c790238a605d6d7c
+PODFILE CHECKSUM: abae9606b4ffab98cc964743172382a2cef9ec8f
 
 COCOAPODS: 1.5.3

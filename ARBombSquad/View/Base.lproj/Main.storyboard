@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uzl-PS-0We">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LA9-ZD-Pcc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,7 +13,7 @@
         <!--Game Play View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GamePlayViewController" customModule="The_Balloon_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GamePlayViewController" customModule="ARBombSquad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlg-Jt-Q7m">
-                                <rect key="frame" x="175" y="321" width="24" height="24"/>
+                                <rect key="frame" x="175.5" y="321.5" width="24" height="24"/>
                                 <state key="normal" image="targetScope"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqv-S0-4pZ">
@@ -39,7 +40,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0j-WF-3hH">
-                                <rect key="frame" x="18" y="554" width="83" height="83"/>
+                                <rect key="frame" x="18" y="471" width="166" height="166"/>
                                 <state key="normal" backgroundImage="pause"/>
                                 <connections>
                                     <action selector="pauseClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wou-JS-03H"/>
@@ -127,7 +128,7 @@
         <!--Stage Interstitial View Controller-->
         <scene sceneID="Q04-yZ-POi">
             <objects>
-                <viewController storyboardIdentifier="StageInterstitialViewController" id="aM8-d0-4cS" customClass="StageInterstitialViewController" customModule="The_Balloon_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StageInterstitialViewController" id="aM8-d0-4cS" customClass="StageInterstitialViewController" customModule="ARBombSquad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RSC-3P-zsJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,7 +165,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54c-ou-GuO">
-                                <rect key="frame" x="150.5" y="427" width="75" height="75"/>
+                                <rect key="frame" x="150" y="427" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="JpN-Si-EWi"/>
                                     <constraint firstAttribute="width" constant="75" id="trM-mK-UwD"/>
@@ -218,16 +219,16 @@
         <!--Home Screen View Controller-->
         <scene sceneID="p6H-Ff-uXc">
             <objects>
-                <viewController id="8hq-xD-oiu" customClass="HomeScreenViewController" customModule="The_Balloon_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8hq-xD-oiu" customClass="HomeScreenViewController" customModule="ARBombSquad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RKv-FI-s1G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m6y-3w-lOS">
-                                <rect key="frame" x="68" y="106" width="239" height="136"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bomb-squad" translatesAutoresizingMaskIntoConstraints="NO" id="m6y-3w-lOS">
+                                <rect key="frame" x="68" y="106" width="239" height="136.5"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGH-VR-a5z">
-                                <rect key="frame" x="162.5" y="309" width="50" height="48"/>
+                                <rect key="frame" x="162.5" y="309.5" width="50" height="48"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
                                 <state key="normal" title="Play!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -237,21 +238,21 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1J-Xk-SCr">
-                                <rect key="frame" x="131" y="397" width="113" height="48"/>
+                                <rect key="frame" x="131" y="397.5" width="113" height="48"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
                                 <state key="normal" title="High Scores">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMb-zb-DAf">
-                                <rect key="frame" x="149" y="485" width="77" height="48"/>
+                                <rect key="frame" x="149" y="485.5" width="77" height="48"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
                                 <state key="normal" title="Settings">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydu-F5-bvw">
-                                <rect key="frame" x="158.5" y="573" width="58" height="48"/>
+                                <rect key="frame" x="158.5" y="573.5" width="58" height="48"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
                                 <state key="normal" title="About">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -284,7 +285,7 @@
         <!--Game Level View Controller-->
         <scene sceneID="xN3-9A-QA2">
             <objects>
-                <viewController id="uHz-cx-fvl" customClass="GameLevelViewController" customModule="The_Balloon_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uHz-cx-fvl" customClass="GameLevelViewController" customModule="ARBombSquad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HW2-75-LwO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -299,7 +300,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LevelCell" id="hAg-b7-6JD" customClass="LevelCollectionViewCell" customModule="The_Balloon_Game" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LevelCell" id="hAg-b7-6JD" customClass="LevelCollectionViewCell" customModule="ARBombSquad" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -364,6 +365,68 @@
             </objects>
             <point key="canvasLocation" x="336.80000000000001" y="130.88455772113943"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="zSU-zp-LVu">
+            <objects>
+                <viewController id="LA9-ZD-Pcc" customClass="LoginViewController" customModule="ARBombSquad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pdb-Un-NNb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bomb-squad" translatesAutoresizingMaskIntoConstraints="NO" id="ssx-ZG-mJY">
+                                <rect key="frame" x="0.0" y="20" width="375" height="229"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cNr-dP-rJe">
+                                <rect key="frame" x="46" y="279" width="274" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bQO-TZ-5vy">
+                                <rect key="frame" x="46" y="349" width="274" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwS-Ck-TgC">
+                                <rect key="frame" x="46" y="408" width="63" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSignUp:" destination="LA9-ZD-Pcc" eventType="touchUpInside" id="HKM-HY-Vdk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yM4-C1-Vgn">
+                                <rect key="frame" x="276" y="408" width="44" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onLogin:" destination="LA9-ZD-Pcc" eventType="touchUpInside" id="h2j-HL-wPJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.54681012867029966" green="0.35135139792532699" blue="0.57919406890000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="rmH-UD-t7L"/>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="bQO-TZ-5vy" id="Wl2-1U-MTg"/>
+                        <outlet property="usernameTextField" destination="cNr-dP-rJe" id="Akj-In-vcf"/>
+                        <segue destination="Uzl-PS-0We" kind="presentation" identifier="loginSegue" id="ykv-5E-DNy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eA4-Co-ESX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2154.4000000000001" y="130.88455772113943"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="8yh-Cv-FY8">
             <objects>
@@ -385,12 +448,13 @@
     <resources>
         <image name="LevelBG" width="83" height="83"/>
         <image name="LevelBGPressed" width="83" height="83"/>
-        <image name="cancel" width="133" height="133"/>
-        <image name="menu" width="133" height="133"/>
-        <image name="next" width="133" height="133"/>
-        <image name="pause" width="83" height="83"/>
-        <image name="popupBackground" width="333" height="433"/>
-        <image name="retry" width="133" height="133"/>
+        <image name="bomb-squad" width="260" height="260"/>
+        <image name="cancel" width="29.298067092895508" height="29.298067092895508"/>
+        <image name="menu" width="29.298067092895508" height="29.298067092895508"/>
+        <image name="next" width="29.298067092895508" height="29.298067092895508"/>
+        <image name="pause" width="166" height="166"/>
+        <image name="popupBackground" width="74.921958923339844" height="97.398544311523438"/>
+        <image name="retry" width="29.298067092895508" height="29.298067092895508"/>
         <image name="smallballoon" width="24" height="24"/>
         <image name="smallbullet" width="24" height="24"/>
         <image name="targetScope" width="24" height="24"/>
