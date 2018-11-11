@@ -1,8 +1,8 @@
 //
 //  DataStore.swift
-//  The Balloon Game
+//  ARBombSquad
 //
-//  Created by Akshat Goel on 12/02/18.
+//  Created by Akshat Goel & Neil Shah on 12/02/18.
 //  Copyright © 2018 starksky. All rights reserved.
 //
 
