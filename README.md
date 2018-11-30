@@ -14,7 +14,7 @@ Each user would have a login profile that uses parse as the backend to store use
 - [x] Create a timer countdown that gives the user a set time to finish each stage
 - [x] Create 3D models for defuse laser and bombs.
 - [x] Create sceneKit scene for the target.
-- [X]Create game flow when stage is sucess and stage is failed.
+- [X] Create game flow when stage is sucess and stage is failed.
 - [x] Apply physics to shots and bombs distance.
 - [x] Implement a design so that it'll be modular in a way, it'll be easier to add another stage and models for the same.
 - [x] Optimise it for tablets and iphone of all screens.
