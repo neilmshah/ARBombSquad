@@ -11,5 +11,5 @@ import UIKit
 class LevelCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var levelLabel: UILabel!
-    
+
 }
