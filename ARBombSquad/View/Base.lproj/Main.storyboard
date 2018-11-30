@@ -264,17 +264,6 @@
                                     <segue destination="N2a-Kz-l9A" kind="show" id="Thg-Q6-Rtm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLt-i8-md1">
-                                <rect key="frame" x="13" y="18" width="60" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
-                                <state key="normal" title="Logout">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTapLogout:" destination="8hq-xD-oiu" eventType="touchUpInside" id="qvQ-Vw-vAX"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.3921568627" green="0.25490196079999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -400,7 +389,7 @@
         <!--Login View Controller-->
         <scene sceneID="zSU-zp-LVu">
             <objects>
-                <viewController id="LA9-ZD-Pcc" customClass="LoginViewController" customModule="ARBombSquad" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="LA9-ZD-Pcc" customClass="LoginViewController" customModule="ARBombSquad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pdb-Un-NNb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -703,6 +692,33 @@
                                                 <constraint firstItem="XKb-o6-JEb" firstAttribute="leading" secondItem="N8c-OV-ozP" secondAttribute="leading" constant="16" id="94K-gY-jJw"/>
                                                 <constraint firstItem="XKb-o6-JEb" firstAttribute="top" secondItem="N8c-OV-ozP" secondAttribute="top" constant="6" id="Pkz-oI-tIN"/>
                                                 <constraint firstAttribute="bottom" secondItem="XKb-o6-JEb" secondAttribute="bottom" constant="7.5" id="fMQ-Gk-5iA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="quB-Q6-Lso">
+                                        <rect key="frame" x="0.0" y="232" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="quB-Q6-Lso" id="vil-kd-gOX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqP-l9-owF">
+                                                    <rect key="frame" x="16" y="6" width="343" height="34"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Logout">
+                                                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="didTapLogout:" destination="0ro-H5-W7h" eventType="touchUpInside" id="3Gz-u2-akZ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="eqP-l9-owF" firstAttribute="top" secondItem="vil-kd-gOX" secondAttribute="top" constant="6" id="MWx-Rq-ADs"/>
+                                                <constraint firstAttribute="trailing" secondItem="eqP-l9-owF" secondAttribute="trailing" constant="16" id="Qwb-Gz-iuv"/>
+                                                <constraint firstItem="eqP-l9-owF" firstAttribute="leading" secondItem="vil-kd-gOX" secondAttribute="leading" constant="16" id="kCs-bc-BIT"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
