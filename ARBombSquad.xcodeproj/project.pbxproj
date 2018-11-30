@@ -16,8 +16,8 @@
 		1DEF6E7E2047D8F000019831 /* StageInterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF6E7C2047D8F000019831 /* StageInterstitialViewController.swift */; };
 		282F2DFC2192C728003D7485 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282F2DFB2192C728003D7485 /* LoginViewController.swift */; };
 		9E8384DCF9B665BEA8C92AB1 /* Pods_ARBombSquad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C657F45ECBE24C43607298 /* Pods_ARBombSquad.framework */; };
-		AC2EE5CA21B0D6BE0036496A /* laser.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC2EE5C921B0D6BE0036496A /* laser.wav */; };
 		AC39217D2046BAE400B85A1F /* bullettxture.png in Resources */ = {isa = PBXBuildFile; fileRef = AC39217C2046BAE400B85A1F /* bullettxture.png */; };
+		AC5E6BB421B0F29500C9B41E /* laser.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC5E6BB321B0F29500C9B41E /* laser.wav */; };
 		AC723546203C4C6E000FE6EE /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC723545203C4C6E000FE6EE /* UIAlertController+Extension.swift */; };
 		AC7A54C4202FFAC700A4E670 /* StageThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7A54C3202FFAC700A4E670 /* StageThree.swift */; };
 		AC7A54C620317C1100A4E670 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7A54C520317C1100A4E670 /* DataStore.swift */; };
@@ -61,8 +61,8 @@
 		6F75B83C8EB5CFCB4FC57281 /* Pods_The_Balloon_Game.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Balloon_Game.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8677B0743D677FDEC08271EA /* Pods-ARBombSquad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBombSquad.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARBombSquad/Pods-ARBombSquad.release.xcconfig"; sourceTree = "<group>"; };
 		A4C657F45ECBE24C43607298 /* Pods_ARBombSquad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARBombSquad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC2EE5C921B0D6BE0036496A /* laser.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = laser.wav; path = ../../../../Desktop/laser.wav; sourceTree = "<group>"; };
 		AC39217C2046BAE400B85A1F /* bullettxture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullettxture.png; sourceTree = "<group>"; };
+		AC5E6BB321B0F29500C9B41E /* laser.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laser.wav; sourceTree = "<group>"; };
 		AC723545203C4C6E000FE6EE /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		AC7A54C3202FFAC700A4E670 /* StageThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageThree.swift; sourceTree = "<group>"; };
 		AC7A54C520317C1100A4E670 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 		ACBB778B204573CF002970E8 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
-				AC2EE5C921B0D6BE0036496A /* laser.wav */,
+				AC5E6BB321B0F29500C9B41E /* laser.wav */,
 				ACBB778E204629C2002970E8 /* balloonburst.wav */,
 				ACBB778C20457B53002970E8 /* gunshot.wav */,
 			);
@@ -319,7 +319,7 @@
 			files = (
 				AC8682411FE10B2200F0E067 /* LaunchScreen.storyboard in Resources */,
 				AC86823E1FE10B2200F0E067 /* Assets.xcassets in Resources */,
-				AC2EE5CA21B0D6BE0036496A /* laser.wav in Resources */,
+				AC5E6BB421B0F29500C9B41E /* laser.wav in Resources */,
 				AC39217D2046BAE400B85A1F /* bullettxture.png in Resources */,
 				1DBB0522205A278400A306D6 /* PopUpViewController.xib in Resources */,
 				AC8682501FE10E0E00F0E067 /* Media.scnassets in Resources */,
