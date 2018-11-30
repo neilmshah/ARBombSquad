@@ -44,6 +44,7 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
     let popViewController : PopUpViewController = PopUpViewController(nibName: "PopUpViewController", bundle: nil)
     var popup : KLCPopup!
     var interstitialVC : StageInterstitialViewController?
+    var isFinite: Bool = false
     
     @IBOutlet weak var timerLabel: MZTimerLabel!
     
@@ -141,7 +142,7 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
         )
         gunAnimate()
         
-        if(fireCount == 0){
+        if(fireCount == 0 && isFinite){
             DispatchQueue.main.asyncAfter(deadline: .now() + 2){
                 if(self.fireCount == 0 && self.balloonCount > 0){
                     self.presentInterstitialWith(type: .Failure)
@@ -153,7 +154,7 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
     }
     
     func playGunShotSound() {
-        gunShotPlayer = preparePlayerForSound(named: "gunshot")
+        gunShotPlayer = preparePlayerForSound(named: "laser")
         gunShotPlayer?.prepareToPlay()
         gunShotPlayer?.play()
     }
@@ -189,7 +190,7 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
     private func initializeSounds(){
         
         Audio.balloonBurst = AVAudioPlayer(file: "balloonburst", type: "wav")
-        Audio.gunShot = AVAudioPlayer(file: "gunshot", type: "wav")
+        Audio.gunShot = AVAudioPlayer(file: "laser", type: "wav")
     }
     
     func addEgg(x: Float, y: Float, z: Float) {
@@ -361,7 +362,13 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
             eggCount += 1
             self.sceneView.scene.rootNode.addChildNode(egg)
         }
+        
         fireCount = configuration.numberOfTries
+        if(fireCount == 0){
+            isFinite = false
+        }else{
+             isFinite = true
+        }
         self.balloonCount = eggCount
         print("ballooncount -- ",self.balloonCount)
         self.noFBalloonsLabel.text = String(self.balloonCount)
