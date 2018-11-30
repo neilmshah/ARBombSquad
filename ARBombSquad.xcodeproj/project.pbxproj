@@ -15,6 +15,8 @@
 		1DBB0522205A278400A306D6 /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBB0520205A278400A306D6 /* PopUpViewController.xib */; };
 		1DEF6E7E2047D8F000019831 /* StageInterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF6E7C2047D8F000019831 /* StageInterstitialViewController.swift */; };
 		282F2DFC2192C728003D7485 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282F2DFB2192C728003D7485 /* LoginViewController.swift */; };
+		91577FEC21B12D3D008BDB81 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91577FEB21B12D3D008BDB81 /* LeaderboardViewController.swift */; };
+		91A961D821B14B5800E3A863 /* LeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A961D721B14B5800E3A863 /* LeaderboardCell.swift */; };
 		9E8384DCF9B665BEA8C92AB1 /* Pods_ARBombSquad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C657F45ECBE24C43607298 /* Pods_ARBombSquad.framework */; };
 		AC39217D2046BAE400B85A1F /* bullettxture.png in Resources */ = {isa = PBXBuildFile; fileRef = AC39217C2046BAE400B85A1F /* bullettxture.png */; };
 		AC5E6BB421B0F29500C9B41E /* laser.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC5E6BB321B0F29500C9B41E /* laser.wav */; };
@@ -60,6 +62,8 @@
 		2FC12B2179E59A4E3B84F36A /* Pods-ARBombSquad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBombSquad.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARBombSquad/Pods-ARBombSquad.release.xcconfig"; sourceTree = "<group>"; };
 		6F75B83C8EB5CFCB4FC57281 /* Pods_The_Balloon_Game.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Balloon_Game.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8677B0743D677FDEC08271EA /* Pods-ARBombSquad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBombSquad.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARBombSquad/Pods-ARBombSquad.release.xcconfig"; sourceTree = "<group>"; };
+		91577FEB21B12D3D008BDB81 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		91A961D721B14B5800E3A863 /* LeaderboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardCell.swift; sourceTree = "<group>"; };
 		A4C657F45ECBE24C43607298 /* Pods_ARBombSquad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARBombSquad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC39217C2046BAE400B85A1F /* bullettxture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullettxture.png; sourceTree = "<group>"; };
 		AC5E6BB321B0F29500C9B41E /* laser.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laser.wav; sourceTree = "<group>"; };
@@ -208,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				AC8682331FE10B2200F0E067 /* AppDelegate.swift */,
+				91577FEB21B12D3D008BDB81 /* LeaderboardViewController.swift */,
+				91A961D721B14B5800E3A863 /* LeaderboardCell.swift */,
 				AC86824B1FE10D7700F0E067 /* HomeScreenViewController.swift */,
 				AC86824D1FE10DAD00F0E067 /* GameLevelViewController.swift */,
 				1D0ADEAF2000D3BB00EB074B /* LevelCollectionViewCell.swift */,
@@ -385,6 +391,7 @@
 				AC7A54C620317C1100A4E670 /* DataStore.swift in Sources */,
 				AC7A54CC2031821100A4E670 /* StageSix.swift in Sources */,
 				ACBB779220462F15002970E8 /* Audio.swift in Sources */,
+				91A961D821B14B5800E3A863 /* LeaderboardCell.swift in Sources */,
 				AC86823C1FE10B2200F0E067 /* The_Balloon_Game.xcdatamodeld in Sources */,
 				ACE8559020296A140052131A /* String+Extension.swift in Sources */,
 				AC7A54D02031825E00A4E670 /* StageEight.swift in Sources */,
@@ -395,6 +402,7 @@
 				AC8682361FE10B2200F0E067 /* GamePlayViewController.swift in Sources */,
 				1DA48DB2205EA59F004BA02C /* KLCPopup.m in Sources */,
 				AC7A54D22031827500A4E670 /* StageNine.swift in Sources */,
+				91577FEC21B12D3D008BDB81 /* LeaderboardViewController.swift in Sources */,
 				AC7A54C82031813900A4E670 /* StageFour.swift in Sources */,
 				1D0ADEB02000D3BB00EB074B /* LevelCollectionViewCell.swift in Sources */,
 				AC8682341FE10B2200F0E067 /* AppDelegate.swift in Sources */,

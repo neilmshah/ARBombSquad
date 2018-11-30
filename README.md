@@ -8,7 +8,7 @@ Each user would have a login profile that uses parse as the backend to store use
 
 ## Functional stories
 - [X] Implement an initial screen that will consist of several options - login, quick start, settings, high scores and about. 
-- [x] Implement login that takes the user to a login screen that will use parse as the back end to store each users details - id, highscores, etc
+- [x] Implement login that takes the user to a login screen that will use parse as the back end to store each users details - ID, highscores, etc
 - [X] Implement screen to display the different stages and level of the game.
 - [X] User apple's ARKit to model bomb elements in the surroundings that the user can see when he starts the game and it switches    to the camera
 - [x] Create a timer countdown that gives the user a set time to finish each stage

@@ -25,5 +25,8 @@ class HomeScreenViewController: UIViewController {
         performSegue(withIdentifier: "homeToLevelSegue", sender: self)
     }
     
-
+    @IBAction func leaderboardButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "homeToLeaderboardSegue", sender: self)
+    }
+    
 }

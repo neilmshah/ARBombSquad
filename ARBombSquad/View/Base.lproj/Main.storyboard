@@ -230,18 +230,23 @@
                                 <rect key="frame" x="154" y="314" width="67" height="39"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
                                 <state key="normal" title="PLAY!">
-                                    <color key="titleColor" red="0.88492127410824872" green="0.91336662053200623" blue="0.93596728570720689" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.89121695330871531" green="0.91986467115360349" blue="0.94262612638078203" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
+                                    <action selector="playButtonPressed:" destination="8hq-xD-oiu" eventType="touchUpInside" id="URl-2K-Uph"/>
                                     <segue destination="uHz-cx-fvl" kind="show" id="tTe-du-aBA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1J-Xk-SCr">
-                                <rect key="frame" x="109.5" y="393" width="156" height="39"/>
+                                <rect key="frame" x="103.5" y="393" width="168" height="39"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
-                                <state key="normal" title="HIGH SCORES">
-                                    <color key="titleColor" red="0.85032374221024465" green="0.87765696848383679" blue="0.89937402145850232" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="LEADERBOARD">
+                                    <color key="titleColor" red="0.85811201404790383" green="0.88569559037742362" blue="0.90761155384192205" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="leaderboardButtonPressed:" destination="8hq-xD-oiu" eventType="touchUpInside" id="VgW-H7-o4x"/>
+                                    <segue destination="A7H-jD-CXC" kind="presentation" identifier="homeToLeaderboardSegue" modalTransitionStyle="coverVertical" id="Kc3-kl-1FT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMb-zb-DAf">
                                 <rect key="frame" x="131.5" y="472" width="112" height="39"/>
@@ -364,6 +369,110 @@
             </objects>
             <point key="canvasLocation" x="336.80000000000001" y="130.88455772113943"/>
         </scene>
+        <!--Leaderboard View Controller-->
+        <scene sceneID="GYZ-bi-lzB">
+            <objects>
+                <viewController id="HBc-rg-bKr" customClass="LeaderboardViewController" customModule="ARBombSquad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BKt-bL-J2u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FOV-w9-96M">
+                                <rect key="frame" x="57" y="131" width="271" height="493"/>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.15686274510000001" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FOV-w9-96M" secondAttribute="height" multiplier="271:493" id="AfF-yR-lKY"/>
+                                    <constraint firstAttribute="width" constant="271" id="V6l-wh-Ate"/>
+                                    <constraint firstAttribute="height" constant="493" id="iyG-iv-UKN"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HighscoreCell" rowHeight="74" id="fTc-yK-4zo" customClass="LeaderboardCell" customModule="ARBombSquad" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="271" height="74"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fTc-yK-4zo" id="GxY-JT-Zyv">
+                                            <rect key="frame" x="0.0" y="0.0" width="271" height="73.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HD-Xz-XXF">
+                                                    <rect key="frame" x="24" y="26" width="21" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                                    <color key="textColor" red="0.91750200104335533" green="0.93183492774745524" blue="0.9432228599805289" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="juls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWP-f2-TKW">
+                                                    <rect key="frame" x="53" y="26" width="109" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" red="0.82124873711601565" green="0.8340780257077931" blue="0.84427127319296402" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="800" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="di7-Ya-fuv">
+                                                    <rect key="frame" x="202" y="19" width="54" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                                    <color key="textColor" red="0.90468529521052687" green="0.91881800338095487" blue="0.93004685609451843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.35294117647058826" green="0.36078431372549019" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="rank" destination="5HD-Xz-XXF" id="Yax-ll-jdq"/>
+                                            <outlet property="score" destination="di7-Ya-fuv" id="hH4-o4-odK"/>
+                                            <outlet property="username" destination="vWP-f2-TKW" id="Yka-hn-35y"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYL-Ad-tIJ">
+                                <rect key="frame" x="329" y="73" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Pjb-Oy-eru"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Q63-JD-Nbw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="z49-kb-QDP"/>
+                                    <constraint firstAttribute="width" constant="30" id="zSs-mj-bNE"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="cancel"/>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="HBc-rg-bKr" eventType="touchDown" id="cc1-Bp-oK5"/>
+                                    <action selector="pressedCancel:" destination="aM8-d0-4cS" eventType="touchUpInside" id="geA-Bj-yp5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEADERBOARD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVl-WP-Bpe">
+                                <rect key="frame" x="57" y="73" width="260" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pVl-WP-Bpe" secondAttribute="height" multiplier="130:21" id="mXO-11-qJM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="35"/>
+                                <color key="textColor" red="0.9137254901960784" green="0.93725490196078431" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14901960784313725" green="0.15686274509803921" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Xf-vq-JyV" firstAttribute="trailing" secondItem="zYL-Ad-tIJ" secondAttribute="trailing" constant="16" id="FJ8-s2-Soa"/>
+                            <constraint firstItem="9Xf-vq-JyV" firstAttribute="trailing" secondItem="FOV-w9-96M" secondAttribute="trailing" constant="47" id="KPW-MT-tHh"/>
+                            <constraint firstItem="FOV-w9-96M" firstAttribute="leading" secondItem="pVl-WP-Bpe" secondAttribute="leading" id="LlQ-9R-WdB"/>
+                            <constraint firstItem="zYL-Ad-tIJ" firstAttribute="top" secondItem="9Xf-vq-JyV" secondAttribute="top" constant="9" id="NR6-E8-Wrz"/>
+                            <constraint firstItem="9Xf-vq-JyV" firstAttribute="trailing" secondItem="zYL-Ad-tIJ" secondAttribute="trailing" constant="16" id="Qth-7d-NoH"/>
+                            <constraint firstItem="pVl-WP-Bpe" firstAttribute="top" secondItem="9Xf-vq-JyV" secondAttribute="top" constant="9" id="YUD-2D-lTK"/>
+                            <constraint firstItem="zYL-Ad-tIJ" firstAttribute="top" secondItem="9Xf-vq-JyV" secondAttribute="top" constant="9" id="YUT-nh-TMX"/>
+                            <constraint firstItem="FOV-w9-96M" firstAttribute="top" secondItem="pVl-WP-Bpe" secondAttribute="bottom" constant="16" id="ZyP-E1-s2d"/>
+                            <constraint firstItem="9Xf-vq-JyV" firstAttribute="bottom" secondItem="FOV-w9-96M" secondAttribute="bottom" constant="43" id="dEf-Zw-8NB"/>
+                            <constraint firstItem="pVl-WP-Bpe" firstAttribute="leading" secondItem="9Xf-vq-JyV" secondAttribute="leading" constant="57" id="s1N-qf-OQF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Xf-vq-JyV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YY0-qd-pI5"/>
+                    <connections>
+                        <outlet property="tableView" destination="FOV-w9-96M" id="GEJ-bb-04s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kao-Xq-36T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="336.80000000000001" y="895.50224887556226"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="zSU-zp-LVu">
             <objects>
@@ -463,6 +572,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J5d-EZ-hmD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1302" y="131"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gL3-mT-Vye">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A7H-jD-CXC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Spa-jd-EKW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HBc-rg-bKr" kind="relationship" relationship="rootViewController" id="K9b-lR-vht"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H9I-aI-y4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-540" y="896"/>
         </scene>
     </scenes>
     <resources>
