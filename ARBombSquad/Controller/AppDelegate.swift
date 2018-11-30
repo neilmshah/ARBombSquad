@@ -36,6 +36,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.rootViewController = homeScreenViewController
         }
         
+        NotificationCenter.default.addObserver(forName: NSNotification.Name("didLogOut"), object: nil, queue: OperationQueue.main) { (Notification) in
+            print("Logout notification received")
+            PFUser.logOutInBackground { (error: Error?) in
+                if let error = error {
+                    print(error.localizedDescription)
+                } else {
+                    print("Successful Logout")
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let loginViewController = storyboard.instantiateViewController(withIdentifier: "loginViewController")
+                    self.window?.rootViewController = loginViewController
+                }
+            }
+        }
+        
         return true
     }
 

@@ -25,5 +25,8 @@ class HomeScreenViewController: UIViewController {
         performSegue(withIdentifier: "homeToLevelSegue", sender: self)
     }
     
-
+    @IBAction func didTapLogout(_ sender: Any) {
+        NotificationCenter.default.post(name: NSNotification.Name("didLogOut"), object: nil)
+    }
+    
 }

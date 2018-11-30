@@ -234,7 +234,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="uHz-cx-fvl" kind="show" id="tTe-du-aBA"/>
+                                    <segue destination="uHz-cx-fvl" kind="presentation" id="tTe-du-aBA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1J-Xk-SCr">
@@ -262,6 +262,17 @@
                                 </state>
                                 <connections>
                                     <segue destination="N2a-Kz-l9A" kind="show" id="Thg-Q6-Rtm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLt-i8-md1">
+                                <rect key="frame" x="13" y="18" width="60" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLogout:" destination="8hq-xD-oiu" eventType="touchUpInside" id="qvQ-Vw-vAX"/>
                                 </connections>
                             </button>
                         </subviews>
