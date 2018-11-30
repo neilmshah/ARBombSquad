@@ -170,7 +170,7 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
     
     func playBalloonBurstSound() {
         if(muteVolume==false){
-            balloonBurstPlayer = preparePlayerForSound(named : "balloonburst")
+            balloonBurstPlayer = preparePlayerForSound(named : "diffuse")
             balloonBurstPlayer?.setVolume(volumeValue, fadeDuration: 0.1)
             balloonBurstPlayer?.prepareToPlay()
             balloonBurstPlayer?.play()
@@ -423,7 +423,8 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
     
     func presentMainMenu() {
         popup.dismiss(true)
-        self.navigationController?.popViewController(animated: true)
+      //  self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
     func nextStage() {

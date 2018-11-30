@@ -163,5 +163,181 @@
             landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ARBombSquad/Controller/StageInterstitialViewController.swift"
+            timestampString = "565313572.274105"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "pressedCancel(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ARBombSquad.StageInterstitialViewController.pressedCancel(Any) -&gt; ()"
+                  moduleName = "ARBombSquad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akshat/xcode/ARBombSquad-master/ARBombSquad/Controller/StageInterstitialViewController.swift"
+                  timestampString = "565313454.266867"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc ARBombSquad.StageInterstitialViewController.pressedCancel(Any) -&gt; ()"
+                  moduleName = "ARBombSquad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akshat/xcode/ARBombSquad-master/ARBombSquad/Controller/StageInterstitialViewController.swift"
+                  timestampString = "565313454.268751"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ARBombSquad/Controller/StageInterstitialViewController.swift"
+            timestampString = "565313572.274166"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "pressedHome(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ARBombSquad.StageInterstitialViewController.pressedHome(Any) -&gt; ()"
+                  moduleName = "ARBombSquad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akshat/xcode/ARBombSquad-master/ARBombSquad/Controller/StageInterstitialViewController.swift"
+                  timestampString = "565313454.399861"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc ARBombSquad.StageInterstitialViewController.pressedHome(Any) -&gt; ()"
+                  moduleName = "ARBombSquad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akshat/xcode/ARBombSquad-master/ARBombSquad/Controller/StageInterstitialViewController.swift"
+                  timestampString = "565313454.404701"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ARBombSquad/Controller/GamePlayViewController.swift"
+            timestampString = "565313572.274213"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "403"
+            endingLineNumber = "403"
+            landmarkName = "pauseClicked(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ARBombSquad.GamePlayViewController.pauseClicked(Any) -&gt; ()"
+                  moduleName = "ARBombSquad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akshat/xcode/ARBombSquad-master/ARBombSquad/Controller/GamePlayViewController.swift"
+                  timestampString = "565312347.876305"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "403"
+                  endingLineNumber = "403"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc ARBombSquad.GamePlayViewController.pauseClicked(Any) -&gt; ()"
+                  moduleName = "ARBombSquad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akshat/xcode/ARBombSquad-master/ARBombSquad/Controller/GamePlayViewController.swift"
+                  timestampString = "565312347.878239"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "403"
+                  endingLineNumber = "403"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ARBombSquad/Controller/GamePlayViewController.swift"
+            timestampString = "565313572.27426"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "413"
+            endingLineNumber = "413"
+            landmarkName = "presentMainMenu()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ARBombSquad/Controller/GamePlayViewController.swift"
+            timestampString = "565313572.274302"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "423"
+            endingLineNumber = "423"
+            landmarkName = "closePopup()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

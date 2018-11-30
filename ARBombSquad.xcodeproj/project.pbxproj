@@ -47,6 +47,7 @@
 		ACDF81C92000FBD700A26E74 /* StageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDF81C82000FBD700A26E74 /* StageOne.swift */; };
 		ACDF81CB200107E200A26E74 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDF81CA200107E200A26E74 /* UserDefaultsManager.swift */; };
 		ACE8559020296A140052131A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE8558F20296A140052131A /* String+Extension.swift */; };
+		ACFAE96C21B1F33C006750E8 /* diffuse.wav in Resources */ = {isa = PBXBuildFile; fileRef = ACFAE96B21B1F33C006750E8 /* diffuse.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		ACDF81C82000FBD700A26E74 /* StageOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageOne.swift; sourceTree = "<group>"; };
 		ACDF81CA200107E200A26E74 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		ACE8558F20296A140052131A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		ACFAE96B21B1F33C006750E8 /* diffuse.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = diffuse.wav; sourceTree = "<group>"; };
 		EEA7E9C0369AD5CA42D8E76E /* Pods-ARBombSquad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBombSquad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARBombSquad/Pods-ARBombSquad.debug.xcconfig"; sourceTree = "<group>"; };
 		FBD29ACD62D7EC7BC3CECF28 /* Pods-ARBombSquad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBombSquad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARBombSquad/Pods-ARBombSquad.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -230,6 +232,7 @@
 		ACBB778B204573CF002970E8 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				ACFAE96B21B1F33C006750E8 /* diffuse.wav */,
 				AC5E6BB321B0F29500C9B41E /* laser.wav */,
 				ACBB778E204629C2002970E8 /* balloonburst.wav */,
 				ACBB778C20457B53002970E8 /* gunshot.wav */,
@@ -327,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC8682411FE10B2200F0E067 /* LaunchScreen.storyboard in Resources */,
+				ACFAE96C21B1F33C006750E8 /* diffuse.wav in Resources */,
 				AC86823E1FE10B2200F0E067 /* Assets.xcassets in Resources */,
 				AC5E6BB421B0F29500C9B41E /* laser.wav in Resources */,
 				AC39217D2046BAE400B85A1F /* bullettxture.png in Resources */,
@@ -567,8 +571,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_COMPILATION_MODE = singlefile;
-				SWIFT_ENABLE_BATCH_MODE = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_ENABLE_BATCH_MODE = NO;				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
