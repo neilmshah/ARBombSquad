@@ -8,27 +8,24 @@ Each user would have a login profile that uses parse as the backend to store use
 
 ## Functional stories
 - [X] Implement an initial screen that will consist of several options - login, quick start, settings, high scores and about. 
-- [] Implement login that takes the user to a login screen that will use parse as the back end to store each users details - id, highscores, etc
-- [] Implement the settings page, where the user can change game settings such as music, difficulty, brightness, etc. 
-- [] Implement the high score page, which will list the top 5 scores in the game amongst all users worldwide that play the game
+- [x] Implement login that takes the user to a login screen that will use parse as the back end to store each users details - id, highscores, etc
 - [X] Implement screen to display the different stages and level of the game.
 - [X] User apple's ARKit to model bomb elements in the surroundings that the user can see when he starts the game and it switches    to the camera
-- [] Form different disarm devices that user can use to disarm the bomb once he approaches a certain proximity
-- [] Create a timer countdown that gives the user a set time to finish each stage
-- [] Design at least 10 stages to kick start the game.
-- [] Create 3D models for defuse laser and bombs.
-- [] Create sceneKit scene for the target.
+- [x] Create a timer countdown that gives the user a set time to finish each stage
+- [x] Create 3D models for defuse laser and bombs.
+- [x] Create sceneKit scene for the target.
+- [X]Create game flow when stage is sucess and stage is failed.
+- [x] Apply physics to shots and bombs distance.
+- [x] Implement a design so that it'll be modular in a way, it'll be easier to add another stage and models for the same.
+- [x] Optimise it for tablets and iphone of all screens.
+- [x] Initialize the AR scene config and align current position of camera to orientation and camera.
+- [x] Set coordinates for the different objects.
 - [] Add sound effects to the fire moment.
 - [] Add animation when bomb is diffused using xcode 3d editor.
-- [X]Create game flow when stage is sucess and stage is failed.
-- [] Create number of hits and and number of bombs that are needed to diffuse.
-- [] Create 3D models for defuse laser and bombs.
-- [] Apply physics to shots and bombs distance.
-- [] Implement a design so that it'll be modular in a way, it'll be easier to add another stage and models for the same.
-- [] Optimise it for tablets and iphone of all screens.
-- [] Apply physics to shots and bombs distance.
-- [] Initialize the AR scene config and align current position of camera to orientation and camera.
-- [] Set coordinates for the different objects.
+- [] Implement the settings page, where the user can change game settings such as music, difficulty, brightness, etc. 
+- [] Implement the high score page, which will list the top 5 scores in the game amongst all users worldwide that play the game
+- [] Design at least 10 stages to kick start the game.
+- [] Form different disarm devices that user can use to disarm the bomb once he approaches a certain proximity
 
 
 ## Tables and columns needed in parse
