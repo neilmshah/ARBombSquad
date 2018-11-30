@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  The Balloon Game
+//  ARBombSquad
 //
 //  Created by Akshat Goel on 13/12/17.
-//  Copyright © 2017 starksky. All rights reserved.
+//  Copyright © 2019. All rights reserved.
 //
 
 import UIKit
@@ -29,6 +29,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://arbombsquad.herokuapp.com/parse"
             })
         )
+        
+        if PFUser.current() != nil {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let homeScreenViewController = storyboard.instantiateViewController(withIdentifier: "homeScreen")
+            window?.rootViewController = homeScreenViewController
+        }
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name("didLogOut"), object: nil, queue: OperationQueue.main) { (Notification) in
+            print("Logout notification received")
+            PFUser.logOutInBackground { (error: Error?) in
+                if let error = error {
+                    print(error.localizedDescription)
+                } else {
+                    print("Successful Logout")
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let loginViewController = storyboard.instantiateViewController(withIdentifier: "loginViewController")
+                    self.window?.rootViewController = loginViewController
+                }
+            }
+        }
         
         return true
     }

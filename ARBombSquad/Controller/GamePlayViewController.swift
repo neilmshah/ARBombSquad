@@ -45,6 +45,8 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
     var popup : KLCPopup!
     var interstitialVC : StageInterstitialViewController?
     var isFinite: Bool = false
+    var muteVolume: Bool = false
+    var volumeValue: Float = 0.5
     
     @IBOutlet weak var timerLabel: MZTimerLabel!
     
@@ -62,7 +64,11 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
         timerLabel.timerType = MZTimerLabelTypeTimer
         timerLabel.timeFormat = "ss SS"
         timerLabel.delegate = self
-                
+        
+        let defaults = UserDefaults.standard
+        muteVolume = defaults.bool(forKey: "muteVolume")
+        volumeValue = defaults.float(forKey: "volumeValue")
+        
         // Do any additional setup after loading the view, typically from a nib.
         
         guard let pointofView = sceneView.pointOfView else {return}
@@ -150,19 +156,24 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
             }
         }
         
-        
     }
     
     func playGunShotSound() {
-        gunShotPlayer = preparePlayerForSound(named: "laser")
-        gunShotPlayer?.prepareToPlay()
-        gunShotPlayer?.play()
+        if(muteVolume==false){
+            gunShotPlayer = preparePlayerForSound(named: "laser")
+            gunShotPlayer?.setVolume(volumeValue, fadeDuration: 0.1)
+            gunShotPlayer?.prepareToPlay()
+            gunShotPlayer?.play()
+        }
     }
     
     func playBalloonBurstSound() {
-        balloonBurstPlayer = preparePlayerForSound(named : "balloonburst")
-        balloonBurstPlayer?.prepareToPlay()
-        balloonBurstPlayer?.play()
+        if(muteVolume==false){
+            balloonBurstPlayer = preparePlayerForSound(named : "balloonburst")
+            balloonBurstPlayer?.setVolume(volumeValue, fadeDuration: 0.1)
+            balloonBurstPlayer?.prepareToPlay()
+            balloonBurstPlayer?.play()
+        }
     }
     
     
