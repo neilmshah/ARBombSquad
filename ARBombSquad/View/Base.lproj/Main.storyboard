@@ -250,6 +250,9 @@
                                 <state key="normal" title="Settings">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="OW0-Ft-DOX" kind="presentation" id="afV-zM-kui"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydu-F5-bvw">
                                 <rect key="frame" x="158.5" y="573.5" width="58" height="48"/>
@@ -257,6 +260,9 @@
                                 <state key="normal" title="About">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="N2a-Kz-l9A" kind="show" id="Thg-Q6-Rtm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.3921568627" green="0.25490196079999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
@@ -461,6 +467,113 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J5d-EZ-hmD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1302" y="131"/>
+        </scene>
+        <!--ABOUT-->
+        <scene sceneID="4YE-zX-kUn">
+            <objects>
+                <viewController id="eOB-4v-eG2" customClass="AboutViewController" customModule="ARBombSquad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mK3-st-2jI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="About ARBombSquad" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O0x-7q-c33">
+                                <rect key="frame" x="20" y="113" width="335" height="39"/>
+                                <color key="backgroundColor" red="0.46029914" green="0.30173996149999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="DkE-dD-Hf3">
+                                <rect key="frame" x="20" y="172" width="335" height="475"/>
+                                <color key="backgroundColor" red="0.46029914" green="0.30173996149999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">ARBombSquad is fun and easy to play game based on augmented reality.  You are  the commander of a specialized bomb squad that has to find the bombs deployed around your surroundings and successfully disarm the bomb. Point your difusing device at the bomb and fire a speciliazed electron laser that disables the bomb! Go on commander, lives depend on you!</string>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46029914" green="0.30173996149999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DkE-dD-Hf3" firstAttribute="leading" secondItem="Qoi-p4-uN6" secondAttribute="leading" constant="20" id="6XW-39-970"/>
+                            <constraint firstItem="DkE-dD-Hf3" firstAttribute="top" secondItem="O0x-7q-c33" secondAttribute="bottom" constant="20" id="COj-jr-kkc"/>
+                            <constraint firstItem="Qoi-p4-uN6" firstAttribute="trailing" secondItem="O0x-7q-c33" secondAttribute="trailing" constant="20" id="F4A-Zb-oAD"/>
+                            <constraint firstItem="O0x-7q-c33" firstAttribute="top" secondItem="Qoi-p4-uN6" secondAttribute="top" constant="49" id="Fxh-yt-qzL"/>
+                            <constraint firstItem="O0x-7q-c33" firstAttribute="leading" secondItem="Qoi-p4-uN6" secondAttribute="leading" constant="20" id="V2A-I0-gCQ"/>
+                            <constraint firstItem="Qoi-p4-uN6" firstAttribute="trailing" secondItem="DkE-dD-Hf3" secondAttribute="trailing" constant="20" id="rde-ov-wE3"/>
+                            <constraint firstItem="Qoi-p4-uN6" firstAttribute="bottom" secondItem="DkE-dD-Hf3" secondAttribute="bottom" constant="20" id="zdt-l3-Pf8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qoi-p4-uN6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ABOUT" id="oio-uI-lfM">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="8jV-H9-40z"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="Edb-H5-Ulf">
+                            <connections>
+                                <action selector="backButtonTapped:" destination="eOB-4v-eG2" id="zoq-iS-tqq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CK2-Ir-jXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-540" y="892"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="imr-aF-qnJ">
+            <objects>
+                <viewController id="o0C-69-7PM" customClass="SettingsViewController" customModule="ARBombSquad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5uQ-yz-rGJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="JEx-K9-bC0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="uQe-3G-0MZ">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="jW5-Co-vxl">
+                            <connections>
+                                <action selector="backButtonTapped:" destination="o0C-69-7PM" id="cEI-3d-DZt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="COa-uk-sdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1153" y="871"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EEH-oj-kqC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N2a-Kz-l9A" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8jf-Vy-Cyw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eOB-4v-eG2" kind="relationship" relationship="rootViewController" id="urN-t5-6hu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zuA-Ip-9yW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1303" y="892"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5T5-6c-6V5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OW0-Ft-DOX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="81h-4t-jeT">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="o0C-69-7PM" kind="relationship" relationship="rootViewController" id="UEX-xf-6U7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZlH-4w-gH1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="337" y="872"/>
         </scene>
     </scenes>
     <resources>

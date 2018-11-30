@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  The Balloon Game
+//  ARBombSquad
 //
 //  Created by Akshat Goel on 13/12/17.
-//  Copyright © 2017 starksky. All rights reserved.
+//  Copyright © 2019. All rights reserved.
 //
 
 import UIKit

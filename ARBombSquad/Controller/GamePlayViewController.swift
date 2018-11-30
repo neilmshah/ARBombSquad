@@ -121,7 +121,7 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
         let bullet = SCNNode(geometry: SCNSphere(radius: 0.02))
         // let bulletScene = SCNScene(named: "Media.scnassets/bulletScene.scn")
         // let bullet = bulletScene?.rootNode.childNode(withName: "bulletscene", recursively: false)
-        playGunShotSound()
+        //playGunShotSound()
         bullet.geometry?.firstMaterial?.diffuse.contents = UIColor.red
         bullet.position = position
         let body = SCNPhysicsBody(type: .dynamic, shape: nil)
@@ -190,7 +190,7 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
     private func initializeSounds(){
         
         Audio.balloonBurst = AVAudioPlayer(file: "balloonburst", type: "wav")
-        Audio.gunShot = AVAudioPlayer(file: "laser", type: "wav")
+        //Audio.gunShot = AVAudioPlayer(file: "laser", type: "wav")
     }
     
     func addEgg(x: Float, y: Float, z: Float) {
