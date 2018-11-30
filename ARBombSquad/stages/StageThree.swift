@@ -15,8 +15,8 @@ class StageThree: NSObject {
     
     func configurationForStage() -> (Array<SCNNode>, Int, TimeInterval) { //eggs, tries, time
         for i in 0...1 {
-            let eggScene = SCNScene(named: "Media.scnassets/egg.scn")
-            let eggNode = (eggScene?.rootNode.childNode(withName: "egg", recursively: false))!
+            let eggScene = SCNScene(named: "Media.scnassets/tnt.scn")
+            let eggNode = (eggScene?.rootNode.childNode(withName: "tnt", recursively: false))!
             eggNode.name = "egg"
             eggNode.physicsBody = SCNPhysicsBody(type: .static, shape: SCNPhysicsShape(node: eggNode, options: nil))
             eggNode.physicsBody?.categoryBitMask = BitMaskCategory.target.rawValue
