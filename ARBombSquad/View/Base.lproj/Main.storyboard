@@ -175,8 +175,8 @@
                                     <action selector="clickedNext:" destination="aM8-d0-4cS" eventType="touchUpInside" id="eLG-kX-caM"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioK-er-FNf">
-                                <rect key="frame" x="338" y="-37" width="74" height="74"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioK-er-FNf">
+                                <rect key="frame" x="338" y="-37" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="74" id="9bx-7H-YaE"/>
                                     <constraint firstAttribute="height" constant="74" id="d5b-ED-OdH"/>
