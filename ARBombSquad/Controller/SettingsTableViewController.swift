@@ -17,6 +17,13 @@ class SettingsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let defaults = UserDefaults.standard
+        let mute = defaults.bool(forKey: "muteVolume")
+        let volume = defaults.float(forKey: "volumeValue")
+        
+        volumeSlider.value = volume
+        muteSwitch.isOn=mute
+        
     }
 
     
@@ -39,13 +46,16 @@ class SettingsTableViewController: UITableViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func volumeSliderChanged(_ sender: Any) {
-        var currentVolue = volumeSlider.value
-        
+    @IBAction func volumeSliderChanged(_ sender: UISlider) {
+        let defaults = UserDefaults.standard
+        defaults.set(sender.value, forKey: "volumeValue")
+        defaults.synchronize()
     }
     
-    @IBAction func muteTapped(_ sender: Any) {
-        
+    @IBAction func muteTapped(_ sender: UISwitch) {
+        let defaults = UserDefaults.standard
+        defaults.set(sender.isOn, forKey: "muteVolume")
+        defaults.synchronize()
     }
     
     

@@ -45,6 +45,8 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
     var popup : KLCPopup!
     var interstitialVC : StageInterstitialViewController?
     var isFinite: Bool = false
+    var muteVolume: Bool = false
+    var volumeValue: Float = 0.5
     
     @IBOutlet weak var timerLabel: MZTimerLabel!
     
@@ -62,7 +64,11 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
         timerLabel.timerType = MZTimerLabelTypeTimer
         timerLabel.timeFormat = "ss SS"
         timerLabel.delegate = self
-                
+        
+        let defaults = UserDefaults.standard
+        muteVolume = defaults.bool(forKey: "muteVolume")
+        volumeValue = defaults.float(forKey: "volumeValue")
+        
         // Do any additional setup after loading the view, typically from a nib.
         
         guard let pointofView = sceneView.pointOfView else {return}
@@ -121,7 +127,7 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
         let bullet = SCNNode(geometry: SCNSphere(radius: 0.02))
         // let bulletScene = SCNScene(named: "Media.scnassets/bulletScene.scn")
         // let bullet = bulletScene?.rootNode.childNode(withName: "bulletscene", recursively: false)
-        //playGunShotSound()
+        playGunShotSound()
         bullet.geometry?.firstMaterial?.diffuse.contents = UIColor.red
         bullet.position = position
         let body = SCNPhysicsBody(type: .dynamic, shape: nil)
@@ -150,19 +156,24 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
             }
         }
         
-        
     }
     
     func playGunShotSound() {
-        gunShotPlayer = preparePlayerForSound(named: "laser")
-        gunShotPlayer?.prepareToPlay()
-        gunShotPlayer?.play()
+        if(muteVolume==false){
+            gunShotPlayer = preparePlayerForSound(named: "laser")
+            gunShotPlayer?.setVolume(volumeValue, fadeDuration: 0.1)
+            gunShotPlayer?.prepareToPlay()
+            gunShotPlayer?.play()
+        }
     }
     
     func playBalloonBurstSound() {
-        balloonBurstPlayer = preparePlayerForSound(named : "balloonburst")
-        balloonBurstPlayer?.prepareToPlay()
-        balloonBurstPlayer?.play()
+        if(muteVolume==false){
+            balloonBurstPlayer = preparePlayerForSound(named : "balloonburst")
+            balloonBurstPlayer?.setVolume(volumeValue, fadeDuration: 0.1)
+            balloonBurstPlayer?.prepareToPlay()
+            balloonBurstPlayer?.play()
+        }
     }
     
     
@@ -190,7 +201,7 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
     private func initializeSounds(){
         
         Audio.balloonBurst = AVAudioPlayer(file: "balloonburst", type: "wav")
-        //Audio.gunShot = AVAudioPlayer(file: "laser", type: "wav")
+        Audio.gunShot = AVAudioPlayer(file: "laser", type: "wav")
     }
     
     func addEgg(x: Float, y: Float, z: Float) {
