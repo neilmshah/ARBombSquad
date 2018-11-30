@@ -36,6 +36,7 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
     var gunShotPlayer : AVAudioPlayer?
     var balloonBurstPlayer : AVAudioPlayer?
     var balloonCount = 0
+    var highScore = 0
     var fireCount : Int?
     var gunCameraNode : SCNNode!
     var gunScene:SCNScene!
@@ -287,6 +288,9 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
         print("ballooncount  - ",self.balloonCount)
         self.balloonCount = self.balloonCount - 1
         
+        self.highScore = self.highScore + 100
+        print("Score=",self.highScore)
+        
         DispatchQueue.main.asyncAfter(deadline: .now()){
             self.noFBalloonsLabel.text = String(self.balloonCount)
         }
@@ -313,7 +317,16 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
             print("stage finished ")
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 //   self.stageTwo()
+                UserInfo.saveHighScore(score: String(self.highScore), level: self.stage) { (success, error) in
+                    if success {
+                        print("successfuly saved score")
+                    } else {
+                        print("could not save score")
+                        print(error?.localizedDescription as Any)
+                    }
+                }
                 self.presentInterstitialWith(type: .Success)
+                
             }
         } else {
             print("game still going on")

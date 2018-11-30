@@ -58,6 +58,9 @@ class SettingsTableViewController: UITableViewController {
         defaults.synchronize()
     }
     
+    @IBAction func didTapLogout(_ sender: Any) {
+        NotificationCenter.default.post(name: NSNotification.Name("didLogOut"), object: nil)
+    }
     
     private func resetProgressAlert(indexPath: IndexPath) {
         let alertViewController = UIAlertController(title: nil, message: nil,

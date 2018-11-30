@@ -19,6 +19,13 @@ class UserInfo: PFObject, PFSubclassing {
         return "UserInfo"
     }
     
-    
+    class func saveHighScore(score: String, level: Int, withCompletion completion: PFBooleanResultBlock?) {
+        let userInfo = UserInfo()
+        userInfo.author = PFUser.current()!
+        userInfo.score = score
+        userInfo.level = level
+        
+        userInfo.saveInBackground(block: completion)
+    }
 
 }
