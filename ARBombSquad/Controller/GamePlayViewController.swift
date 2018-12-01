@@ -129,6 +129,11 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
         // let bulletScene = SCNScene(named: "Media.scnassets/bulletScene.scn")
         // let bullet = bulletScene?.rootNode.childNode(withName: "bulletscene", recursively: false)
         playGunShotSound()
+        
+        
+        
+       // bullet.addParticleSystem(SCNParticleSystem(named: "fireShot", inDirectory: nil)!)
+        
         bullet.geometry?.firstMaterial?.diffuse.contents = UIColor.red
         bullet.position = position
         let body = SCNPhysicsBody(type: .dynamic, shape: nil)
@@ -137,7 +142,10 @@ class GamePlayViewController: UIViewController, SCNPhysicsContactDelegate, ARSCN
         body.applyForce(SCNVector3(orientation.x*power, orientation.y*power, orientation.z*power), asImpulse: true)
         body.categoryBitMask = BitMaskCategory.bullet.rawValue
         body.contactTestBitMask = BitMaskCategory.target.rawValue
+        
         bullet.physicsBody = body
+        
+        
         self.sceneView.scene.rootNode.addChildNode(bullet)
         if(fireCount != 0){
             fireCount = fireCount! -  1
