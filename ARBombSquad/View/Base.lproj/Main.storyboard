@@ -494,23 +494,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="About ARBombSquad" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O0x-7q-c33">
-                                <rect key="frame" x="20" y="113" width="335" height="39"/>
-                                <color key="backgroundColor" red="0.46029914" green="0.30173996149999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="24"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ABOUT ARBOMBSQUAD" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O0x-7q-c33">
+                                <rect key="frame" x="20" y="113" width="335" height="29"/>
+                                <color key="backgroundColor" red="0.14901960784313725" green="0.15686274509803921" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.89803921568627454" green="0.92156862745098034" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="DkE-dD-Hf3">
-                                <rect key="frame" x="20" y="172" width="335" height="475"/>
-                                <color key="backgroundColor" red="0.46029914" green="0.30173996149999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">ARBombSquad is fun and easy to play game based on augmented reality.  You are  the commander of a specialized bomb squad that has to find the bombs deployed around your surroundings and successfully disarm the bomb. Point your difusing device at the bomb and fire a speciliazed electron laser that disables the bomb! Go on commander, lives depend on you!</string>
+                                <rect key="frame" x="20" y="162" width="335" height="485"/>
+                                <color key="backgroundColor" red="0.14901960784313725" green="0.15686274509803921" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">ARBombSquad is fun and easy to play game based on augmented reality.  You are the commander of a specialized bomb squad that has to find the bombs deployed around your surroundings and successfully disarm the bomb. Point your difusing device at the bomb and fire a speciliazed electron laser that disables the bomb! Go on commander, lives depend on you!</string>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.46029914" green="0.30173996149999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.14901960784313725" green="0.15686274509803921" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DkE-dD-Hf3" firstAttribute="leading" secondItem="Qoi-p4-uN6" secondAttribute="leading" constant="20" id="6XW-39-970"/>
                             <constraint firstItem="DkE-dD-Hf3" firstAttribute="top" secondItem="O0x-7q-c33" secondAttribute="bottom" constant="20" id="COj-jr-kkc"/>
