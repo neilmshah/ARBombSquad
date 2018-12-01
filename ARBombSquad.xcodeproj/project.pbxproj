@@ -18,6 +18,8 @@
 		285A4B1521B0EFEF00FE9FA0 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A4B1421B0EFEF00FE9FA0 /* AboutViewController.swift */; };
 		285A4B1A21B1187000FE9FA0 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A4B1921B1187000FE9FA0 /* SettingsTableViewController.swift */; };
 		285A4B1C21B1CE1B00FE9FA0 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A4B1B21B1CE1B00FE9FA0 /* UserInfo.swift */; };
+		285A4B2221B200A100FE9FA0 /* HighScoresCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A4B2121B200A100FE9FA0 /* HighScoresCell.swift */; };
+		285A4B2421B201EE00FE9FA0 /* HighScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A4B2321B201EE00FE9FA0 /* HighScoreViewController.swift */; };
 		9E8384DCF9B665BEA8C92AB1 /* Pods_ARBombSquad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C657F45ECBE24C43607298 /* Pods_ARBombSquad.framework */; };
 		AC39217D2046BAE400B85A1F /* bullettxture.png in Resources */ = {isa = PBXBuildFile; fileRef = AC39217C2046BAE400B85A1F /* bullettxture.png */; };
 		AC5E6BB421B0F29500C9B41E /* laser.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC5E6BB321B0F29500C9B41E /* laser.wav */; };
@@ -64,6 +66,8 @@
 		285A4B1421B0EFEF00FE9FA0 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		285A4B1921B1187000FE9FA0 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		285A4B1B21B1CE1B00FE9FA0 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		285A4B2121B200A100FE9FA0 /* HighScoresCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoresCell.swift; sourceTree = "<group>"; };
+		285A4B2321B201EE00FE9FA0 /* HighScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreViewController.swift; sourceTree = "<group>"; };
 		2FC12B2179E59A4E3B84F36A /* Pods-ARBombSquad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBombSquad.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARBombSquad/Pods-ARBombSquad.release.xcconfig"; sourceTree = "<group>"; };
 		6F75B83C8EB5CFCB4FC57281 /* Pods_The_Balloon_Game.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Balloon_Game.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8677B0743D677FDEC08271EA /* Pods-ARBombSquad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBombSquad.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARBombSquad/Pods-ARBombSquad.release.xcconfig"; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 				AC7A54C520317C1100A4E670 /* DataStore.swift */,
 				ACBB779120462F15002970E8 /* Audio.swift */,
 				285A4B1B21B1CE1B00FE9FA0 /* UserInfo.swift */,
+				285A4B2121B200A100FE9FA0 /* HighScoresCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 				282F2DFB2192C728003D7485 /* LoginViewController.swift */,
 				285A4B1421B0EFEF00FE9FA0 /* AboutViewController.swift */,
 				285A4B1921B1187000FE9FA0 /* SettingsTableViewController.swift */,
+				285A4B2321B201EE00FE9FA0 /* HighScoreViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -413,6 +419,7 @@
 				AC7A54C82031813900A4E670 /* StageFour.swift in Sources */,
 				1D0ADEB02000D3BB00EB074B /* LevelCollectionViewCell.swift in Sources */,
 				AC8682341FE10B2200F0E067 /* AppDelegate.swift in Sources */,
+				285A4B2421B201EE00FE9FA0 /* HighScoreViewController.swift in Sources */,
 				AC86824E1FE10DAD00F0E067 /* GameLevelViewController.swift in Sources */,
 				1DEF6E7E2047D8F000019831 /* StageInterstitialViewController.swift in Sources */,
 				ACDF81CB200107E200A26E74 /* UserDefaultsManager.swift in Sources */,
@@ -423,6 +430,7 @@
 				1DAD0D55202F457100A35F67 /* StageConfiguration.swift in Sources */,
 				AC7A54C4202FFAC700A4E670 /* StageThree.swift in Sources */,
 				285A4B1C21B1CE1B00FE9FA0 /* UserInfo.swift in Sources */,
+				285A4B2221B200A100FE9FA0 /* HighScoresCell.swift in Sources */,
 				AC7A54CA203181A600A4E670 /* StageFive.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -564,14 +572,15 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R68J3728W3;
+				DEVELOPMENT_TEAM = 3L7UBEHU25;
 				INFOPLIST_FILE = ARBombSquad/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.julie.ARBombSquad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_COMPILATION_MODE = singlefile;
-				SWIFT_ENABLE_BATCH_MODE = NO;				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_ENABLE_BATCH_MODE = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -586,7 +595,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R68J3728W3;
+				DEVELOPMENT_TEAM = 3L7UBEHU25;
 				INFOPLIST_FILE = ARBombSquad/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.julie.ARBombSquad;
